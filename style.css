@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Mazius Review;
+  src: url(assets/fonts/maziusreview-regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Mazius Review;
+  font-style: italic;
+  src: url(assets/fonts/maziusreview-extraitalic.woff2) format('woff2');
+}
+
+body {
+  font-family: Mazius Review, serif;
+  font-size: 48px;
+  line-height: 1.25;
+
+  background-color: #ffffff;
+  color: #333333;
+  margin: 40px auto;
+  width: 620px;
+}
+
+h1 {
+  font-size: 10vw;
+  font-style: italic;
+}
