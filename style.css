@@ -31,6 +31,16 @@
   }
 }
 
+@keyframes blob {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 body {
   font-family: Mazius Review, serif;
   font-size: 48px;
@@ -38,7 +48,7 @@ body {
 
   background-color: #ffffff;
   color: #333333;
-  margin: 40px auto;
+  margin: 0px auto;
 }
 
 header {
@@ -77,12 +87,10 @@ header span {
 }
 
 section {
-  background-color: #f9868d;
   padding: 200px;
 }
 
 section.dark {
-  background-color: #8652ff;
 }
 
 figure {
@@ -92,4 +100,29 @@ figure {
 
 figcaption {
   margin: 24px 20% 0 0;
+}
+
+section img {
+  filter: grayscale(100%) brightness(125%) contrast(125%);
+}
+
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+path {
+  fill: #8652ff;
+  transform: scale(0);
+  animation: blob 10s 3s both;
+}
+
+g.blob-2 path {
+  animation: blob 10s 4s both;
 }
